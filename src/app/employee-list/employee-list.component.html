@@ -1,0 +1,10 @@
+<h2>Employees</h2>
+
+<div>
+    <div *ngFor = "let employee of employees">
+        <app-employee [employee]="employee"></app-employee>
+        <button type="button" (click)="removeEmployee(employee)">Delete</button>
+    </div>
+</div>
+
+<a routerLink="/add-employee">Add new Employee</a>

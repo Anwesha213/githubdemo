@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+}
+
+li{
+    
+    color: blue;
+    padding-bottom: 0.5em;
+}
+li:nth-child(odd){
+    background-color: beige;
+}

@@ -1,0 +1,7 @@
+<p>
+    Project Type <input type="text" name="projectType" [formControl]="projectTypeControl" id="projectType"/>
+    <button type="button" (click)="findProjectType()">Find Details</button>
+</p>
+<div *ngIf="matchingProject">
+   <app-project [project]="matchingProject"></app-project>
+</div>

@@ -1,0 +1,22 @@
+<h3>Add new Employee</h3>
+
+<p>
+    <label for="empName">Name</label> &nbsp;
+    <input type="text" [formControl]="empName"/>
+</p>
+<p>
+    <label for="empId">Id</label> &nbsp;
+    <input type="text" [formControl]="empId"/>
+</p>
+<p>
+    <label for="empAddress">Address</label> &nbsp;
+    <input type="text" [formControl]="empAddress"/>
+</p>
+<p>
+    <label for="empTitle">Title</label> &nbsp;
+    <input type="text" [formControl]="empTitle"/>
+</p>
+<p>
+    <button type="button" (click)="saveEmployee()">Save</button>
+</p>
+<a routerLink="/employee-list">All Employees</a>
